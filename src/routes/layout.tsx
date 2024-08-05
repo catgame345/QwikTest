@@ -1,5 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import { SideBar } from "~/components/sidebar/sidebar";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -13,5 +14,17 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
-  return <Slot />;
+  const MOCK_PROPS = {
+    items: [
+      { route: "/", name: "Home", key: 0 },
+      { route: "/test", name: "Tests", key: 1 },
+    ],
+  };
+
+  return (
+    <>
+      <SideBar {...MOCK_PROPS} />
+      <Slot />
+    </>
+  );
 });
