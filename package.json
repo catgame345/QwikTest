@@ -25,7 +25,7 @@
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "qwik": "qwik",
-    "deploys": "bun run build && bunx gh-pages -d build -t true"
+    "deploys": "bun run build && bunx gh-pages -d dist -t true"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.7.3",
