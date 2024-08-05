@@ -1,0 +1,1 @@
+import{_ as t}from"./q-uemlvruI.js";import{B as o,q as r,d as e,S as s,F as _}from"./q-H2rGP2Bs.js";const m=o(r(()=>t(()=>import("./q-Dyua9FW0.js"),[]),"s_vobEVH2Z8Dc")),l=()=>e(_,{children:[e(m,{...{items:[{route:"/",name:"Home",key:0},{route:"/test",name:"Tests",key:1}]}},0,"yB_0"),e(s,null,3,"yB_1")]},1,"yB_2");export{l as s_VKFlAWJuVm8};
